@@ -1,0 +1,7 @@
+export { default as HomePage } from './HomePage.vue'
+export { default as HistoryPage } from './HistoryPage.vue'
+export { default as TraditionsPage } from './TraditionsPage.vue'
+export { default as EventsPage } from './EventsPage.vue'
+export { default as EventDetailPage } from './EventDetailPage.vue'
+export { default as AboutPage } from './AboutPage.vue'
+export { default as NotFoundPage } from './NotFoundPage.vue'

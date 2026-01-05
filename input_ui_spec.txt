@@ -1,0 +1,70 @@
+Project Name:
+New Year Cultural Celebration Website
+
+Purpose:
+A cultural-themed website introducing New Year celebrations, traditions, and historical background,
+allowing users to explore how New Year is celebrated across different cultures and eras.
+
+Target Users:
+- General public
+- Students
+- Cultural enthusiasts
+
+──────────────────────────────────── Pages ────────────────────────────────────
+
+1. Home Page
+- Hero banner with New Year theme
+- Introduction text explaining the significance of New Year
+- Navigation entry points to other sections
+- Highlight cards for:
+  - History
+  - Traditions
+  - Events
+
+2. History Page
+- Timeline view of New Year origins
+- Sections for:
+  - Ancient civilizations
+  - Modern calendar systems
+- Expandable/collapsible timeline items
+
+3. Traditions Page
+- List of New Year traditions by region:
+  - East Asia
+  - Europe
+  - Americas
+- Each tradition includes:
+  - Title
+  - Description
+  - Symbolic meaning
+
+4. Celebration Events Page
+- List of New Year celebration events
+- Each event includes:
+  - Event name
+  - Date
+  - Location
+  - Short description
+- Ability to filter events by region
+
+5. Event Detail Page
+- Detailed view of a selected event
+- Full description
+- Cultural background
+- Static schedule (mock data)
+
+6. About Page
+- Purpose of the website
+- Cultural preservation message
+
+──────────────────────────────────── Functional Requirements ────────────────────────────────────
+- Global navigation bar
+- Active route highlighting
+- Responsive layout for mobile and desktop
+- Basic global state (selected region filter)
+- All data loaded from local mock files
+
+──────────────────────────────────── Non-Functional Requirements ────────────────────────────────────
+- No backend API calls
+- No authentication
+- Focus on content presentation and navigation clarity
