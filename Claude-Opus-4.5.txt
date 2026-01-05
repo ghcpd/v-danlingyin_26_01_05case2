@@ -1,0 +1,228 @@
+Claude-Opus-4.5  ：：
+User: Prompt: 
+You are a senior front-end engineer specializing in Vue 3, TypeScript, and modern web development.
+Your task is to build a complete, production-ready New Year Cultural Celebration website from scratch, based strictly on the specifications provided in input_ui_spec.txt.
+This is a UI Case evaluation focusing on:
+- App creation from scratch
+- Multi-page UI implementation
+- Cultural content presentation
+- Front-end architecture design
+- TypeScript correctness
+- State management
+- Responsiveness & accessibility
+- Ability to follow a detailed specification exactly
+──────────────────────────────────── Technical Requirements ────────────────────────────────────
+- Framework: Vue 3 (Composition API) + TypeScript
+- Build Tool: Vite
+- Styling: Tailwind CSS (or CSS Modules if preferred)
+- Package Manager: pnpm
+- Routing: Vue Router 4
+- State Management: Pinia (or equivalent lightweight solution)
+- API: No real backend (use mock/static data only)
+- Component Library: Optional (Element Plus / Naive UI / custom components)
+──────────────────────────────────── Your Responsibilities ────────────────────────────────────
+1.Read & Analyze Specification
+- Read input_ui_spec.txt thoroughly before writing any code
+- Identify all required pages, components, and interactions
+- Understand cultural content structure and user navigation flow
+- Do NOT assume any feature not explicitly described
+2.Generate a Complete Working Project You MUST generate a fully functional Vue 3 + TypeScript + Vite project including:
+Configuration files:
+- package.json
+- tsconfig.json (strict mode enabled)
+- vite.config.ts
+- index.html
+- tailwind.config.js (if Tailwind is used)
+- postcss.config.js (if Tailwind is used)
+Required folder structure: src/ components/ # Reusable UI components pages/ # Page-level views router/ # Vue Router configuration stores/ # Pinia stores (global state) types/ # TypeScript type definitions utils/ # Helper functions data/ # Mock cultural data App.vue # Root component main.ts # Application entry
+3.Implement All Required Features Based strictly on input_ui_spec.txt, you MUST implement:
+- All defined pages and sections
+- Cultural content display (history, traditions, activities)
+- Event schedules and interactive sections
+- Navigation between pages
+- Responsive layouts (mobile / tablet / desktop)
+- Proper state handling (selected events, filters, etc.)
+- Fully typed data models
+- Mock data where APIs are not defined
+4.Code Quality Standards
+- TypeScript:
+- Strict mode enabled
+- Strong typing for all data structures
+- No usage of any
+- Vue:
+- Composition API only
+- <script setup lang="ts">
+- Styling:
+- Responsive design using utility classes or scoped styles
+- Accessibility:
+- Semantic HTML
+- ARIA labels where appropriate
+- Keyboard navigable UI
+- Performance:
+- Lazy-loaded routes
+- Clean Code:
+- Clear naming
+- DRY principles
+- Comments only for complex logic
+5.Generate README.md README.md MUST include:
+- Project overview
+- New Year cultural theme explanation
+- Tech stack
+- Installation instructions (pnpm install)
+- Development usage (pnpm dev)
+- Build instructions (pnpm build)
+- Project structure explanation
+- Implemented features list
+- Manual UI validation steps
+- Known limitations (if any)
+6.Generate Evaluation Report You MUST generate evaluation_report.json using the structure below:
+{
+  "metadata": {
+    "test_date": "ISO timestamp",
+    "spec_file": "input_ui_spec.txt",
+    "agent_model": "model_name"
+  },
+  "scores": {
+    "ui_completeness": 0,
+    "architecture": 0,
+    "typescript_quality": 0,
+    "state_management": 0,
+    "responsiveness": 0,
+    "accessibility": 0,
+    "overall_score": 0
+  },
+  "pages_implemented": [],
+  "features_implemented": [],
+  "features_missing": [],
+  "files_generated": [],
+  "validation_status": "PASS/FAIL",
+  "notes": ""
+}
+──────────────────────────────────── Strict Rules for the Agent ──────────────────────────────────── 
+MUST DO:
+- Read entire input_ui_spec.txt before starting
+- Generate ALL required files for a working project
+- Use Vue 3 + TypeScript strictly
+- Implement ALL features from specification
+- Ensure pnpm install && pnpm dev works
+- Create responsive and accessible UI
+- Include mock data where APIs are not specified
+- Generate README.md and evaluation_report.json
+MUST NOT:
+- Skip any feature mentioned in spec
+- Hallucinate features not in spec
+- Use JavaScript instead of TypeScript
+- Ignore responsive design
+- Use any
+- Omit configuration files
+- Output partial or incomplete projects
+
+GitHub Copilot: I'll create a complete Vue 3 + TypeScript New Year Cultural Celebration website based on the specification. Let me build all the required files. 
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/package.json)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/tsconfig.json)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/tsconfig.node.json)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/vite.config.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/tailwind.config.js)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/postcss.config.js)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/index.html)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/public/favicon.svg)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/types/index.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/data/mockData.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/stores/appStore.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/stores/index.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/utils/helpers.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/utils/index.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/router/index.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/components/NavBar.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/components/FooterBar.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/components/HighlightCard.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/components/TimelineItem.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/components/TraditionCard.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/components/EventCard.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/components/RegionFilter.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/components/EventSchedule.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/components/PageHeader.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/components/index.ts)
+
+Now let me create all the page components: 
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/pages/HomePage.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/pages/HistoryPage.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/pages/TraditionsPage.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/pages/EventsPage.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/pages/EventDetailPage.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/pages/AboutPage.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/pages/NotFoundPage.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/pages/index.ts)
+
+Now let me create the main application files: 
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/App.vue)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/main.ts)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/styles/main.css)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/src/vite-env.d.ts)
+
+Now let me create the README.md and evaluation_report.json: 
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/README.md)
+
+Created [](file:///c%3A/Users/v-danlingyin/Documents/microsoft_projects_files/bugBash/26.1/1.5/case2/Claude-Opus-4.5/new-year-celebration/evaluation_report.json)
+
+Now let me install dependencies and verify the project works: 
+
+Ran terminal command: cd "c:\Users\v-danlingyin\Documents\microsoft_projects_files\bugBash\26.1\1.5\case2\Claude-Opus-4.5\new-year-celebration" ; pnpm install
+
+Dependencies are installed. Now let me run the type check to verify TypeScript is correctly configured: 
+
+Ran terminal command: pnpm type-check
+
+There's a compatibility issue with vue-tsc version. Let me update the package.json to use a newer compatible version: 
+
+Using "Replace String in File"
+
+
+```
+
+```
+
+
+Ran terminal command: pnpm install
+
+Ran terminal command: pnpm type-check
+
+Made changes.
